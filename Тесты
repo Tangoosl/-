@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Қазақ Елі</title>
+  <style>
+    body {
+      background-color: #00BFFF;
+      color: #FFD700;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 200px;
+      margin: 10px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .ornament {
+      margin-top: 30px;
+      font-size: 24px;
+    }
+
+    section {
+      background-color: #ffffff22;
+      border: 2px solid #FFD700;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 800px;
+      color: #fff;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 16px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #FFD700;
+      color: #00BFFF;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Emblem_of_Kazakhstan_latn.svg/320px-Emblem_of_Kazakhstan_latn.svg.png" alt="Герб Қазақстана">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/320px-Flag_of_Kazakhstan.svg.png" alt="Флаг Қазақстана">
+  </header>
+
+  <h1>Қош келдіңіз!</h1>
+  <p>Бұл менің алғашқы сайтым — Қазақ еліне арналған құрмет!</p>
+
+  <section>
+    <h2>Қазақстан туралы</h2>
+    <p>Қазақстан — Еуразия құрлығының жүрегінде орналасқан мемлекет. Бұл бай тарихы, кең байтақ даласы мен мәдениетімен ерекшеленеді.</p>
+  </section>
+
+  <section>
+    <h2>Мәдениет</h2>
+    <p>Қазақ мәдениеті — терең тамырлы, ұлттық салт-дәстүрлерге бай. Күй, айтыс, киіз үй, домбыра — ұлттық болмысымыздың айғағы.</p>
+    <a href="madeniiet.html" class="button">Мәдениет туралы тестке өту</a>
+  </section>
+
+  <section>
+    <h2>Табиғаты</h2>
+    <p>Қазақстан табиғаты алуан түрлі: биік таулар, кең далалар, шөлейттер мен ормандар, сондай-ақ Каспий теңізі мен Балқаш көлі.</p>
+  </section>
+
+  <div class="ornament">★ Ұлы дала елі ★</div>
+
+  <footer>
+    © 2025 Қазақ стиліндегі сайт
+  </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Мәдениет тесті</title>
+  <style>
+    body {
+      background-color: #00BFFF;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    section {
+      background-color: #ffffff22;
+      border: 2px solid #FFD700;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 800px;
+    }
+
+    h1 {
+      color: #FFD700;
+    }
+
+    .quiz {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .quiz label {
+      display: block;
+      margin: 5px 0;
+    }
+
+    #result {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Мәдениет туралы тест</h1>
+  <section>
+    <div class="quiz">
+      <p>1. Қазақтың ұлттық музыкалық аспабы қайсы?</p>
+      <label><input type="radio" name="q1" value="true"> Домбыра</label>
+      <label><input type="radio" name="q1" value="false"> Гитара</label>
+      <label><input type="radio" name="q1" value="false"> Саксофон</label>
+
+      <p>2. Киіз үй нені білдіреді?</p>
+      <label><input type="radio" name="q2" value="true"> Қазақтың ұлттық баспанасы</label>
+      <label><input type="radio" name="q2" value="false"> Тағам түрі</label>
+      <label><input type="radio" name="q2" value="false"> Көлік</label>
+
+      <p>3. Айтыс дегеніміз не?</p>
+      <label><input type="radio" name="q3" value="true"> Ақындар айтысы</label>
+      <label><input type="radio" name="q3" value="false"> Ұлттық тағам</label>
+      <label><input type="radio" name="q3" value="false"> Көне жазу</label>
+
+      <button onclick="showResult()">Нәтижесін көру</button>
+      <div id="result"></div>
+    </div>
+  </section>
+
+  <p><a href="index.html">← Бас бетке оралу</a></p>
+
+  <script>
+    function showResult() {
+      let correct = 0;
+      for (let i = 1; i <= 3; i++) {
+        const answers = document.getElementsByName('q' + i);
+        for (const answer of answers) {
+          if (answer.checked && answer.value === "true") {
+            correct++;
+          }
+        }
+      }
+      document.getElementById("result").innerText = `Сіз дұрыс жауап бердіңіз: ${correct}/3`;
+    }
+  </script>
+</body>
+</html>
